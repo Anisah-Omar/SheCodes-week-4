@@ -1,51 +1,113 @@
-body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    line-height: 24px;
+:root {
+  --branding-color: #6c63ff;
+  --secondary-color: #f9f7fe;
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", sans-serif;
 }
 
+body {
+  font-family: var(--default-font-family);
+}
 
-p{
-    color: rgba(39, 33, 66);
-    font-size: 36px;
-    font-family: 'Poppins', sans-serif;
-    line-height: 54px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: black;
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 96px;
+}
+
+.project h2 {
+    font-size: 64px;
+    font-family: var(--heading-font-family);
+}
+
+p {
+  font-weight: normal;
 }
 
 .hero {
-    background-color: rgba(249, 247, 254);
-    color: rgba(33,37,41);
-    font-size: 16px;
-    font-weight: 400;
-    padding: 160px 20px 160px 24px;
-
+  background: var(--secondary-color);
+  text-align: center;
+  padding: 160px 20px;
 }
 
-h2 {
-    font-family: 'Playfair Display', serif;
-    line-height: 48px;
+.hero p {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  color: #272142;
+}
+
+.hero h2 {
+  font-family: var(--heading-font-family);
+  font-weight: normal;
+  line-height: 2;
+  font-size: 24px;
+}
+
+.btn-branding {
+  background: var(--branding-color);
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+.project {
+    padding: 120px 60px;
 }
 
 
-h1 {
-    font-size: 96px;
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-    line-height: 115.2px;
+.project p {
+    line-height: 30px;
+    color: rgba(108, 117, 125);
+    font-size:16px;
+    font-family: var(--default-font-family);
 }
 
-.branding {
-    border-radius: 4px;
-    font-weight: 400;
-    text-decoration: none;
-    border: 1px solid transparent;
-    font-size: 18px;
-    line-height: 27px;
-    padding: 15px 30px;
-    gap: 10px;
+.learnmore {
+    color: blueViolet;
+    background: white;
+    border: 1px solid var(--branding-color);
+  border-radius: 4px;
+  
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
 }
 
-
-.branding:hover {
+.learnmore :hover {
     color: black;
+}
+
+
+
+
+@mrdia (max-width: 900px){
+    h1 {
+        font-size: 44px;
+        line-height: 2;
+    }
+
+    h2 {
+        font-size: 44px;
+    }
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .project {
+        padding: 0;
+        text-align: center;
+    }
 }
