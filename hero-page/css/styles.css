@@ -122,6 +122,44 @@ p {
   margin-bottom: 16px;
 }
 
+/*header */
+nav {
+  padding: 20px 0;
+}
+
+
+.logo {
+  max-height: 40px;
+}
+
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  line-height: 24px;
+}
+
+
+nav li {
+  display: inline;
+  line-height: 42px;
+  margin-left: 15px;
+  list-style: none;
+}
+
+nav  a {
+  text-decoration: none;
+    color: #272142;
+    transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav li.active a{
+color: var(--branding-color);
+text-decoration: none;
+}
+
+
 @media (max-width: 900px){
     h1 {
         font-size: 44px;
